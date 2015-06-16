@@ -6,7 +6,9 @@
     <script type="text/javascript" src="canvasTutorial.js"></script>
     <link rel="stylesheet" href="canvasTutorial.css" type="text/css">
 </head>
-<body onload="draw()">
-    <canvas id="tutorial" width="600" height="300">Tutorial</canvas>
+<body>
+    <canvas id="tutorial" width="600" height="600">Tutorial</canvas>
+
+    <input class="vertical-slider" type="range" min="0" max="480" onmousemove="draw(eval(this.value))">
 </body>
 </html>
